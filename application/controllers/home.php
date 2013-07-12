@@ -10,7 +10,15 @@ class home extends parent_controller {
     
      function Content()
     {
-         $data['seguro']="Secure";
+         
+         $courses = new Course();
+         
+         $all = $courses->get()->all;
+         
+         
+         
+         $data['seguro']="nada es seguro";
+         $data['all']=$all;
          $view = $this->load->view(THEME_DIR."/home",$data,true);
          
          
