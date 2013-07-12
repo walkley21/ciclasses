@@ -360,3 +360,12 @@ $config['proxy_ips'] = '';
 
 /* End of file config.php */
 /* Location: ./application/config/config.php */
+
+
+/*custom configs*/
+
+
+$config['theme_dir']='cursos';
+
+define("THEME_DIR","../../themes/{$config['theme_dir']}");
+
